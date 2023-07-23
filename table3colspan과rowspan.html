@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>colspan과 rowspan</title>
+        <meta charset="utf-8">
+        <style>
+            table{
+                border:3px solid black;
+                width:100%;
+                border-collapse:collapse;
+            }
+            tr, th, td{
+                border:3px solid black;
+                padding:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+            <tr>
+            <th colspan="8">코딩하는 실버의 근무표</th>
+            <th rowspan="2">head</th>
+            </tr>
+            <tr>
+                <th>시간</th><th>월</th><th>화</th>
+                <th>수</th><th>목</th><th>금</th>
+                <th>토</th><th>일</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>00-04</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="8" style="text-align:center;">body</td>
+                    </tr>
+
+                    <tr>
+                        <td>04-08</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>08-12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>12-13</td>
+                        <td colspan="7" style=text-align:center;>점심시간</td>
+                    </tr>
+
+                    <tr>
+                        <td>13-17</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>17-18</td>
+                        <td colspan="7" style="text-align:center;">저녁시간</td>
+                    </tr>
+
+                    <tr>
+                        <td>18-21</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>21-24</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+            </tbody>
+
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <title>컬러와 colspan과 rowspan연습</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        table{
+            border:3px solid black;
+            width: 700px;
+            border-collapse:collapse;
+        }
+        tr, td, th{
+            border:3px solid black;
+            font-size: 8px;
+            width: 60px;
+            height: 35px;
+            padding: 5px;
+            text-align:center;
+        }
+    </style>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="6">2021년 1학기 시간표</th>
+                <tr>
+                    <th>요일 교시</th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td rowspan="4" style="background:pink; color:rgb(255, 0, 187);">웹과 인터넷</td>
+                <td rowspan="4" style="background:yellow; color:rgb(183, 33, 33)">제어공학 및 실습</td>
+                <td rowspan="4" style="background:blue; color:blanchedalmond">캡스톤 디자인</td>
+                <td rowspan="4" style="background:purple; color:aqua">반도체공정 이론 및 실습</td>
+                <td rowspan="2" style="background:lightblue; color:green">캡스톤 디자인</td>
+            </tr>
+            <tr>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td rowspan="4" style="background:rgb(221, 204, 108);">나노마이크로공정 및 실습</td>
+                <td rowspan="3" style="background:red; color:white">일본어1</td>
+                <td rowspan="3" style="background:rgb(255, 119, 0)">합리적 문제해결과 논리</td>
+            </tr>
+            <tr>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+        </table>
+
+    </body>
+</html>

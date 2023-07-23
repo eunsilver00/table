@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table 연습</title>
+        <meta charset="utf-8">
+        <style>
+       table{
+            border:none;
+            width:100%;
+            border-collapse:collapse;
+        }
+        tr, th, td{
+            border: 5px solid gray;
+            padding:7px;
+        }
+        th{
+            color:bisque;
+            background:pink;
+        }
+        td{
+            background:black;
+            color:pink;
+            text-align:center;
+        }
+        div{
+            width: 100%;
+            border-radius:10px;
+            overflow:hidden;
+        }
+        /*overfloow:hidden 은 overflow의 값을 
+        hidden 으로 설정하면, 부모요소의 범위를 
+        넘어가는 자식요소의 부분은 보이지 않도록 처리
+        합니다. 여기서는 div라는 부모요소를 만들어 
+        표의 바깥부분을 둥글게 처리하는 
+        border-radius 를 사용해 준겁니다.*/
+        </style>
+    </head>
+    <body>
+        <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>1</th><th>2</th><th>3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">가</td>
+                    <!--rowspan 은 행들을 병합한다는 뜻이다
+                        (세로로병합)
+                        colspan은 열들을 병합한다는 뜻이다
+                        (가로로 병합)
+                    -->
+                    <td>나</td><td>다</td>
+                </tr>
+                <tr>
+                    <td>라</td><td>바</td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+    </body>
+</html>
